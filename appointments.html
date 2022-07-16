@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hospital.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="appointments.html">Book Appointment</a>
+            <a href="enquiry.html">Make Enquiries</a>
+        </div>
+    </header>
+    <section class="sectionA">
+        <div class="leftA">
+            <aside class="asideA">
+                <h4><u><b>BOOK A DOCTOR'S APPOINTMENT</b></u></h4>
+                <p>Kindly note that all appointments will remain pending until officially confirmed by appointment managers from the medical center. An appointmennt is confirmed via a phone call and or SMS from the medical center. We look forward to seeing you. Thank You.</p>
+                <form action="mailto:appointments@faithmed.com" class="tableA" id="tableA">
+                    <label for="table">APPOINTMENT FORM</label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td class="label">FIRST NAME</td>
+                            <td><input class="text" type="text" placeholder="First Name" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label">LAST NAME</td>
+                            <td><input class="text" type="text" placeholder="Last Name" required ></td>
+                        </tr>
+                        <tr>
+                            <td class="label">COUNTRY</td>
+                            <td><input class="text" type="text" placeholder="Country" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label">PHONE NUMBER</td>
+                            <td><input class="text" type="text" placeholder="Phone Number" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label">EMAIL</td>
+                            <td><input class="text" type="email" placeholder="example@domain.com" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label">ID </td>
+                            <td>
+                                <input class="text" type="id" placeholder= "previous vistors only">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="label">PREFERRED DATE</td>
+                            <td><input class="text" type="date" required></td>
+                        </tr>
+                        <tr>
+                            <td class="label">TIME SLOT</td>
+                            <td><input class="text" type="time" required></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <label for="textarea">Reason for appointment</label>
+                    <textarea class="textArea" name="" id="" cols="30" rows="7"></textarea></td>
+                    <input class="btnCompute" type="submit" value="SUBMIT" id="submit" onclick="submit(event)">
+                </form>
+                <script>
+                    const form=document.getElementById("tableA");
+                    form.addEventListener("submit", function submit(event){
+                        event.preventDefault();
+                        form.reset();
+                        });
+                </script>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="locate">
+                <h4><u>LOCATE US</u></h4>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque aperiam velit placeat corrupti, ipsa harum enim rem. Et magni consequatur iusto placeat, quis ipsam incidunt dolore provident aut porro.</P>
+            </div>
+            <div class="links">
+                <h4><b><u>QUICK LINKS</u></b></h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="appointments.html">Book Appointment</a></li>
+                    <li><a href="enquiry.html">Make Enquiries</a></li>
+                    <li><a href="https://www.ghs.gov.gh/covid19" target="_blank">Covid-19 Updates</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4><b><u>CONTACT US</u></b></h4>
+                <table>
+                    <tr>
+                        <td><img src="./icon/phone-fill.png" alt="">:</td>
+                        <td>+233 (0)302 231 432</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/whatsapp-line.png" alt="">:</td>
+                        <td>+233 (0)241 111 111</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/mail-line.png" alt="">:</td>
+                        <td>enquiries@faithmed.com.gh</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr color="black" size="2px">
+        <div class="foot2">
+            <div class="copyright">
+                <b>&copy;copyright 2022</b>
+            </div>
+            <div class="name">
+                <pre>
+                    FAITH MEDICAL CENTER
+                    <i>...person-centered healthcare</i>
+                </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

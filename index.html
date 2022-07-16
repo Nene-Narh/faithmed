@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hospital.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAITH MEDICAL CENTER</title>
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="appointments.html">Book Appointment</a>
+            <a href="enquiry.html">Make Enquiries</a>
+        </div>
+    </header>
+    <section class="section">
+        <div class="left">
+            <aside class="aside">
+                <h4><u><b>OUR SERVICES</b></u></h4>
+                <ul type="disk">
+                    <li>Genetic Counselling</li>
+                    <li>Pedriatics</li>
+                    <li>Physical Therapy</li>
+                    <li>Radiology</li>
+                    <li>Laboratory Services</li>
+                    <li>Emergency Medicine</li>
+                    <li>Pharmacy</li>
+                    <li>Ambulance Services</li>
+                </ul>
+            </aside>
+                <br>
+                
+            <aside class="table">
+                <form>
+                    <h4><b>BMI CALCULATOR</b></h4>
+                    <table align="center" id="table"> 
+                        <tr>
+                            <td>Weight</td>
+                            <td>
+                                <input class="text" id="weight" type="text" placeholder="Enter weight in Kilograms" required pattern="[0-9]" onchange="weight">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>
+                            <input class="text" id="height" type="text" placeholder="Enter height in Centimeters" required pattern="[0-9]" onchange="height">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input class="btnCompute" id="btnCompute" type="submit" value="COMPUTE" onclick="compute()">
+                    <input class="btnCompute" id="reset" type="reset" value="RESET" onclick="reset()">
+                    <script>
+                        function calBMI(){
+                            var bmi;
+                            var weight = document.getElementById("weight").value;
+                            var height = document.getElementById("height").value;
+                            bmi = (weight/(height/100)**2).toFixed(1);
+                            if (bmi < 18.5){
+                                alert("Your BMI is: " + bmi + " and you are UNDERWEIGHT");
+                            } 
+                            else if (bmi >= 18.5 && bmi < 24.9 ){
+                                alert("Your BMI is: " + bmi + " and your weight is NORMAL");
+                            }
+                            else if(bmi >= 25 && bmi <= 29.9){
+                                alert("Your BMI is: " + bmi + " and you are OVERWEIGHT");
+                            }
+                            else if(bmi > 29.9){
+                                alert("Your BMI is: " + bmi + " and you are OBESE");
+                            }
+                        }
+                        function compute(){
+                            document.getElementById("btnCompute").innerHTML=calBMI;
+                            document.addEventListener("click", calBMI);
+                        }
+                        function reset(){
+                            document.getElementById("reset").reset();
+                        }
+                </script>
+                    </script>
+                </form>
+            </aside>
+            <aside class="booking">
+                <h4><b><u>DOCTORS APPOINTMENT</u></b></h4>
+                <p>To make your experience pleasurable, kindly <a href="appointments.html">book</a> for a doctor's appoinment and we will get back as soon as possible. </p>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="locate">
+                <h4><u>LOCATE US</u></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque aperiam velit placeat corrupti, ipsa harum enim rem. Et magni consequatur iusto placeat, quis ipsam incidunt dolore provident aut porro.
+                </p>
+            </div>
+            <div class="links">
+                <h4><b><u>QUICK LINKS</u></b></h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="appointments.html">Book Appointment</a></li>
+                    <li><a href="enquiry.html">Make Enquiries</a></li>
+                    <li><a href="https://www.ghs.gov.gh/covid19" target="_blank">Covid-19 Updates</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4><b><u>CONTACT US</u></b></h4>
+                <table>
+                    <tr>
+                        <td><img src="./icon/phone-fill.png" alt="">:</td>
+                        <td>+233 (0)302 231 432</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/whatsapp-line.png" alt="">:</td>
+                        <td>+233 (0)241 111 111</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/mail-line.png" alt="">:</td>
+                        <td>enquiries@faithmed.com.gh</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr color="black" size="2px">
+        <div class="foot2">
+            <div class="copyright">
+                <b>&copy;copyright 2022</b>
+            </div>
+            <div class="name">
+                <pre>
+                    FAITH MEDICAL CENTER
+                    <i>...person-centered healthcare</i>
+                </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

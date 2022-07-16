@@ -1,0 +1,370 @@
+body{
+    width: 99%;
+}
+.navbar{
+    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #5a531b, #3f4403);
+    background-size: 100%;
+    color: whitesmoke;
+    width: 100%;
+    height: 8vh;
+    text-align: right;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+    overflow: hidden;
+}
+.logo{
+    justify-content: flex-start !important;
+    display: flex !important;
+    background-color: inherit;
+    height: 100%;
+    width: 10%;
+    margin-left: 0;
+    padding-right: 60vw;
+}
+.navbar a{
+    color: #ff6e00;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: inherit;
+    text-decoration: none;
+    margin-right: 2vw;
+    margin-left: -1vw;
+}
+.navbar a:hover{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);
+    background-clip: text;
+    color: transparent;
+}
+.aside{
+    display: block;
+    border-style: solid;
+    color: black;
+    font-size: inherit;
+    text-align: justify;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    border-color: inherit;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 5vh;
+    background-color: aquamarine;
+}
+.asideAU{
+    text-align: left;
+    display: block;
+    padding: 40px;
+    color: black;
+    background-color: aquamarine;
+    border: solid black;
+    border-radius: 30px;
+    margin-top: 12%;
+    margin-left: 13px;
+}
+.asideA{
+    text-align: center;
+    color: black;
+    background-color: aquamarine;
+    border: solid black;
+    border-radius: 30px;
+    margin-top: 12%;
+    margin-left: 13px;
+}
+.asideA input{
+    width: 12vw;
+    font-size: 1vw;
+}
+.asideE{
+    padding-left: 2vw;
+    text-align: justify;
+    color: black;
+    background-color: aquamarine;
+    margin-left: 13px;
+    border: solid black;
+    border-radius: 30px;
+    margin-top: 33%;
+}
+.asideE input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    size: 1vw;
+}
+.aside h4{
+    text-align: center;
+}
+.asideAU h4{
+    padding-top: 40px;
+    text-align: center;
+}
+.asideE h4{
+    padding-right: 40px;
+    padding-top: 40px;
+    text-align: left;
+}
+.table{
+    display: block;
+    border-style: solid;
+    color: black;
+    font-size: inherit;
+    text-align: center;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    border-color: inherit;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 2vh;
+    height: max-content;
+    background-color: aquamarine;
+} 
+.table input{
+    width: 12vw;
+    font-size: 1vw;
+}
+.tableA{
+    display: block;
+    border-style: solid;
+    width: inherit;
+    color: black;
+    font-size: inherit;
+    text-align: center;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    border-color: inherit;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 10px;
+    height: max-content;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aquamarine;
+}
+.text{
+    border-style: solid;
+    border-radius: 30px;
+    background-color: inherit;
+    size: 1vw;
+    font-size: 1vw;
+    position: relative;
+    width: 2vw;
+}
+.textE{
+    border-style: solid;
+    border-radius: 30px;
+    background-color: inherit;
+    position: relative;
+    width: 20vw;
+    font-size: 1vw;
+}
+.textArea{
+    border-style: solid;
+    background-color: inherit;
+    size: 2vw;
+    width: 100%;
+    font-size: 1vh;
+}
+.textAreaE{
+    border-style: solid;
+    background-color: inherit;
+    font-size: 1vw;
+    width: 20vw;
+    height: 20vh;
+}
+.btnCompute{
+    text-align: center;
+    background-color: transparent;
+    border-style: double;
+    border-radius: 30px;
+    font-size: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btnCompute:hover{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);
+    background-clip: text;
+    color: transparent;
+}
+.booking{
+    display: block;
+    position: relative;
+    border-style: solid;
+    border-color: inherit;
+    border-radius: 30px;
+    height: max-content;
+    font-size: inherit;
+    margin-top: 1vw;
+    margin-left: 13px;
+    margin-right: 13px;
+    color: black;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aquamarine;
+}
+.booking h4{
+    text-align: center;
+    color: black;
+}
+.booking a{
+    text-decoration: none;
+    color: #ff6e00;
+}
+.booking a:hover{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);
+    background-clip: text;
+    color: transparent;
+}
+section{
+    background-image: url(./images/index1.jpeg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #bce8f0;
+    width: 100%;
+    text-align: left;
+    padding-top: 50px;
+    height: 90vh;
+    font-size: 1vw;
+}
+.sectionAU{
+    background-image: url(./images/about_us.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #bce8f0;
+    text-align: left ;
+    padding-top: 50px;
+    height: 100vh;
+    font-size: 1vw;
+}
+.sectionA{
+    background-image: url(./images/appointment\ .jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #bce8f0;
+    text-align: left ;
+    padding-top: 50px;
+    font-size: 1vw;
+    height: 120vh;
+}
+.sectionE{
+    background-image: url(./images/enquiry.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #bce8f0;
+    text-align: left ;
+    padding-top: 50px;
+    height: 90vh;
+    font-size: 1vw;
+}
+.left{
+    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
+    background: inherit;
+    float: left;
+    width: 30%;
+    top: 10.8vh;
+    position: absolute;
+    font-size: 1vw;
+}
+.leftAU{
+    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
+    background: inherit;
+    float: left;
+    width: 30%;
+    top: 10.8vh;
+    position: absolute;
+    font-size: 1vw;
+}  
+.leftA{
+    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
+    background: inherit;
+    float: left;
+    width: 40%;
+    top: 10.8vh;
+    position: absolute;
+    font-size: 1vw;
+}
+.leftE{
+    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
+    background: inherit;
+    float: left;
+    width: 30%;
+    top: 10.8vh;
+    position: absolute;
+    font-size: 1vw;
+} 
+footer{
+    background-color: #bce8f0;
+    color: black;
+    position: absolute;
+    font-size: 1vw;
+    width: 99%;
+}
+footer img{
+    width: 1vw;
+    height: 1.5vh;
+}
+.foot{
+    display: inline-flex;
+    padding-left: 16.5vw;
+    padding-right: 10vw;
+}
+.locate{
+    display: block;
+    font-size: inherit;
+    text-align: center;
+    text-decoration: none;
+    background-size: 300px;
+}
+.links{
+    width: 100%;
+    font-size: inherit;
+}
+.links h4{
+    text-align: left;
+    margin-left: 5vw;
+}
+.links ul{
+    text-align: left;
+}
+.links a{
+    text-decoration: none;
+}
+.links a:hover{
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);
+    background-clip: text;
+    color: transparent;
+}
+.contact{
+    text-align: left;
+    width: 100%;
+    background-size: 300px;
+    font-size: inherit;
+}
+.foot2{
+    background-color: rgb(10, 1, 26);
+    color: whitesmoke;
+}
+.copyright{
+    display: block;
+    text-align: center;
+    font-size: inherit;
+}
+.name{
+    text-align: center;
+    padding-right: 11.5%;
+    font-size: inherit;
+}

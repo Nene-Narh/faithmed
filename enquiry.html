@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hospital.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="logo">
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="appointments.html">Book Appointment</a>
+            <a href="enquiry.html">Make Enquiries</a>
+        </div>
+    </header>
+    <section class="sectionE">
+        <div class="leftE">
+            <aside class="asideE">
+                <form action="mailto:enquiries@faithmed.com" method="POST" id="tableE">
+                    <table class="tableE">
+                        <h4><u><b>SEND YOUR ENQUIRIES</b></u></h4>
+                        <input class="textE" type="email" placeholder="Your Email address" required> <br>
+                        <input class="textE" type="text" placeholder="Subject" required>
+                        <textarea class="textAreaE" name="asideE" id="asideE" cols="40" rows="18"></textarea>
+                        <br>
+                        <input type="submit" value="SEND" class="btnCompute" onclick="submit(event)" align="left"> 
+                    </table>
+                    <script>
+                        const form=document.getElementById("tableE");
+                        form.addEventListener("submit", function submit(event){
+                            event.preventDefault();
+                            form.reset();
+                        });
+                </script>
+                    </script>
+                </form>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="locate">
+                <h4><u>LOCATE US</u></h4>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate doloremque aperiam velit placeat corrupti, ipsa harum enim rem. Et magni consequatur iusto placeat, quis ipsam incidunt dolore provident aut porro.</P>
+            </div>
+            <div class="links">
+                <h4><b><u>QUICK LINKS</u></b></h4>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="appointments.html">Book Appointment</a></li>
+                    <li><a href="enquiry.html">Make Enquiries</a></li>
+                    <li><a href="https://www.ghs.gov.gh/covid19" target="_blamk">Covid-19 Updates</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4><b><u>CONTACT US</u></b></h4>
+                <table>
+                    <tr>
+                        <td><img src="./icon/phone-fill.png" alt="">:</td>
+                        <td>+233 (0)302 231 432</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/whatsapp-line.png" alt="">:</td>
+                        <td>+233 (0)241 111 111</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./icon/mail-line.png" alt="">:</td>
+                        <td>enquiries@faithmed.com.gh</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr color="black" size="2px">
+        <div class="foot2">
+            <div class="copyright">
+                <b>&copy;copyright 2022</b>
+            </div>
+            <div class="name">
+                <pre>
+                    FAITH MEDICAL CENTER
+                    <i>...person-centered healthcare</i>
+                </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
