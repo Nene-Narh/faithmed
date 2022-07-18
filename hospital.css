@@ -1,8 +1,10 @@
 body{
     width: 99%;
 }
+
+/*Header Styling*/
 .navbar{
-    background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #5a531b, #3f4403);
+    background-color: antiquewhite;
     background-size: 100%;
     color: whitesmoke;
     width: 100%;
@@ -38,6 +40,8 @@ body{
     background-clip: text;
     color: transparent;
 }
+
+/*Section Styling*/
 .aside{
     display: block;
     border-style: solid;
@@ -127,7 +131,7 @@ body{
 .tableA{
     display: block;
     border-style: solid;
-    width: inherit;
+    width: 60%;
     color: black;
     font-size: inherit;
     text-align: center;
@@ -135,9 +139,9 @@ body{
     position: relative;
     border-radius: 30px;
     border-color: inherit;
-    margin-left: 13px;
-    margin-right: 13px;
-    margin-top: 10px;
+    margin-left: 6.5vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
     height: max-content;
     padding-top: 20px;
     padding-left: 10px;
@@ -167,6 +171,7 @@ body{
     size: 2vw;
     width: 100%;
     font-size: 1vh;
+    border: solid black;
 }
 .textAreaE{
     border-style: solid;
@@ -174,6 +179,7 @@ body{
     font-size: 1vw;
     width: 20vw;
     height: 20vh;
+    border: solid black;
 }
 .btnCompute{
     text-align: center;
@@ -221,7 +227,7 @@ body{
     color: transparent;
 }
 section{
-    background-image: url(./images/index1.jpeg);
+    background-image: url(./images/index.jpg);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,7 +253,7 @@ section{
 }
 .sectionA{
     background-image: url(./images/appointment\ .jpg);
-    background-position: center right;
+    background-position:   center right;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -258,7 +264,7 @@ section{
     height: 120vh;
 }
 .sectionE{
-    background-image: url(./images/enquiry.jpg);
+    background-image: url(./images/enquiry.jpeg);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,7 +276,6 @@ section{
     font-size: 1vw;
 }
 .left{
-    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
     background: inherit;
     float: left;
     width: 30%;
@@ -279,7 +284,6 @@ section{
     font-size: 1vw;
 }
 .leftAU{
-    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
     background: inherit;
     float: left;
     width: 30%;
@@ -288,7 +292,6 @@ section{
     font-size: 1vw;
 }  
 .leftA{
-    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
     background: inherit;
     float: left;
     width: 40%;
@@ -297,7 +300,6 @@ section{
     font-size: 1vw;
 }
 .leftE{
-    /*background: linear-gradient(#ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);*/
     background: inherit;
     float: left;
     width: 30%;
@@ -305,6 +307,8 @@ section{
     position: absolute;
     font-size: 1vw;
 } 
+
+/*Footer Styling*/
 footer{
     background-color: #bce8f0;
     color: black;
